@@ -1,14 +1,17 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 38,
+  "bottomRow": 41,
   "boxShadow": "none",
-  "buttonColor": "#1d4ed8",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "buttonColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -41,7 +44,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 18,
   "text": "Download approved CS",
-  "topRow": 34,
+  "topRow": 37,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "qbe8bp9q96",

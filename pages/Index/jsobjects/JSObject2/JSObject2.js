@@ -37,7 +37,8 @@ export default {
 		const body = {
 			"ponumber":ponumber
 		};
-
+		DeletePO.setDisabled(true)
+		.then(() =>  {
 		fetch("https://hook.eu1.make.com/51yilhhip5bmg724lk8bxzhlbif7wtt6", {
 			method: "POST",
 			headers: {
@@ -49,14 +50,14 @@ export default {
 			.then(data => {
 			try {
 				// Parse the JSON in data.responce
-				console.log(data.responce);
-				debugger;
-				const responseObject = JSON.parse(data.responce);
+				
+				console.log(data);
+				//const responseObject = JSON.parse(data);
 
-				if (responseObject.pofound === true) {
+				if (data.pofound === true) {
 					// Set Group1 visible
 					Group1.setVisibility(true);
-					POinfo.setText(responseObject.details)
+					POinfo.setText(data.details)
 				} else {
 					showModal(Modal1.name);
 				}
@@ -68,6 +69,8 @@ export default {
 			// Handle error response
 			console.error("Error:", error);
 		});
+		})
+		.then(() => DeletePO.setDisabled(false))
 	},
 
 	ButtonGroup1groupButtonsgroupButton3onClick () {

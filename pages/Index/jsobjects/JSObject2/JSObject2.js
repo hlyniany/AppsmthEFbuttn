@@ -49,14 +49,16 @@ export default {
 			.then(data => {
 			try {
 				// Parse the JSON in data.responce
+				console.log(data.responce);
+				debugger;
 				const responseObject = JSON.parse(data.responce);
 
-				if (responseObject.profound === true) {
+				if (responseObject.pofound === true) {
 					// Set Group1 visible
 					Group1.setVisibility(true);
+					POinfo.setText(responseObject.details)
 				} else {
-					// Log a message if "profound" is false or not found
-					console.log("PO is not found");
+					showModal(Modal1.name);
 				}
 			} catch (error) {
 				console.error("Error parsing JSON:", error);
@@ -67,9 +69,9 @@ export default {
 			console.error("Error:", error);
 		});
 	},
-	
+
 	ButtonGroup1groupButtonsgroupButton3onClick () {
-			Group1.setVisibility(false);
+		Group1.setVisibility(false);
 	}
 
 };

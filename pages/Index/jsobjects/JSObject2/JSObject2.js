@@ -32,13 +32,16 @@ export default {
 	},
 
 	DeletePOClick() {
+		// Disable the button immediately
+		DeletePO.setDisabled(true);
+
 		const ponumber = ponum.text;
-		// Construct the JSON body with the task ID
+		// Construct the JSON body with the PO number
 		const body = {
-			"ponumber":ponumber
+			"ponumber": ponumber
 		};
-		DeletePO.setDisabled(true)
-		.then(() =>  {
+
+		// Make the fetch request
 		fetch("https://hook.eu1.make.com/51yilhhip5bmg724lk8bxzhlbif7wtt6", {
 			method: "POST",
 			headers: {
@@ -49,32 +52,76 @@ export default {
 			.then(response => response.json())
 			.then(data => {
 			try {
-				// Parse the JSON in data.responce
-				
 				console.log(data);
-				//const responseObject = JSON.parse(data);
 
 				if (data.pofound === true) {
-					// Set Group1 visible
+					// Set Group1 visible and display PO details
 					Group1.setVisibility(true);
-					POinfo.setText(data.details)
+					POinfo.setText(data.details);
 				} else {
+					// Show a modal if PO is not found
 					showModal(Modal1.name);
 				}
 			} catch (error) {
-				console.error("Error parsing JSON:", error);
+				console.error("Error processing response data:", error);
 			}
 		})
-			.catch((error) => {
-			// Handle error response
+			.catch(error => {
+			// Handle fetch error
 			console.error("Error:", error);
-		});
 		})
-		.then(() => DeletePO.setDisabled(false))
+			.finally(() => {
+			// Re-enable the button after the request completes
+			DeletePO.setDisabled(false);
+		});
 	},
 
-	ButtonGroup1groupButtonsgroupButton3onClick () {
+	DeleteCancel () {
 		Group1.setVisibility(false);
+	},
+
+	DoDelete()
+	{
+		DeletePO.setDisabled(true);
+		Group1.setVisibility(false);
+		const ponumber = ponum.text;
+		// Construct the JSON body with the PO number
+		const body = {
+			"ponumber": ponumber
+		};
+		fetch("https://hook.eu1.make.com/0djk7ikuxp586ll0775ey1ik4riy8omi", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json"
+			},
+			body: JSON.stringify(body)
+		})
+			.then(response => response.json())
+			.then(data => {
+			try {
+
+
+				if (data.result === "ok") {
+					showModal(Modal2.name);
+				} else {
+					// Show a modal if PO is not found
+					storeValue('errmsg',data.error,false);
+					showModal(Modal3.name);
+				}
+			} catch (error) {
+				console.error("Error processing response data:", error);
+			}
+		})
+			.catch(error => {
+			// Handle fetch error
+			console.error("Error:", error);
+		})
+			.finally(() => {
+			// Re-enable the button after the request completes
+			DeletePO.setDisabled(false);
+
+		});
+
 	}
 
 };

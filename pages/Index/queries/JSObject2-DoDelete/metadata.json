@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66ed3b9425cf070fb62d0de3_1f01bd36-db05-4dba-8ff3-04d64dc48d84",
-  "id": "Index_JSObject2.DeletePOClick",
+  "gitSyncId": "66ed3b9425cf070fb62d0de3_db65e420-2fd3-473e-9e3e-e74728fe5bae",
+  "id": "Index_JSObject2.DoDelete",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -23,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "JSObject2.DeletePOClick",
-    "name": "DeletePOClick",
+    "fullyQualifiedName": "JSObject2.DoDelete",
+    "name": "DoDelete",
     "pageId": "Index",
     "userSetOnLoad": false
   }

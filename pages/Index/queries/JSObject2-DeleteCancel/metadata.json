@@ -1,6 +1,6 @@
 {
   "gitSyncId": "66ed3b9425cf070fb62d0de3_a31a2178-3582-486a-8eb6-843f0859d0a4",
-  "id": "Index_JSObject2.ButtonGroup1groupButtonsgroupButton3onClick",
+  "id": "Index_JSObject2.DeleteCancel",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -23,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "JSObject2.ButtonGroup1groupButtonsgroupButton3onClick",
-    "name": "ButtonGroup1groupButtonsgroupButton3onClick",
+    "fullyQualifiedName": "JSObject2.DeleteCancel",
+    "name": "DeleteCancel",
     "pageId": "Index",
     "userSetOnLoad": false
   }

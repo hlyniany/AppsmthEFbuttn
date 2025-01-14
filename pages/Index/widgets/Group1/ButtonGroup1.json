@@ -23,6 +23,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "groupButtons.groupButton3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
     }
   ],
   "groupButtons": {
@@ -35,6 +38,7 @@
       "isVisible": true,
       "label": "Delete",
       "menuItems": {},
+      "onClick": "{{JSObject2.DoDelete();}}",
       "placement": "CENTER",
       "widgetId": ""
     },
@@ -82,7 +86,7 @@
           "widgetId": ""
         }
       },
-      "onClick": "{{JSObject2.ButtonGroup1groupButtonsgroupButton3onClick();}}",
+      "onClick": "{{JSObject2.DeleteCancel();}}",
       "placement": "CENTER",
       "widgetId": ""
     }

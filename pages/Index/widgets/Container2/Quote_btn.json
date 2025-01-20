@@ -1,12 +1,15 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 29,
+  "bottomRow": 4,
   "boxShadow": "none",
-  "buttonColor": "#1d4ed8",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
     {
       "key": "borderRadius"
     }
@@ -16,33 +19,32 @@
       "key": "onClick"
     }
   ],
-  "iconAlign": "left",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "nav34a2ncq",
-  "leftColumn": 2,
+  "leftColumn": 1,
   "minWidth": 120,
   "mobileBottomRow": 34,
   "mobileLeftColumn": 2,
   "mobileRightColumn": 18,
   "mobileTopRow": 30,
   "needsErrorInfo": false,
-  "onClick": "{{JSObject2.ActionClick('newQuote');}}",
+  "onClick": "{{JSObject2.ActionClick('Quote');}}",
   "parentColumnSpace": 13.53125,
-  "parentId": "0",
+  "parentId": "uifbsc173y",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 18,
-  "text": "Generate new Quote",
-  "topRow": 25,
+  "rightColumn": 63,
+  "text": "Generate Quote",
+  "topRow": 0,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "4m9kkoytbh",
-  "widgetName": "Quote_btnCopy"
+  "widgetId": "ra8kbu4nix",
+  "widgetName": "Quote_btn"
 }

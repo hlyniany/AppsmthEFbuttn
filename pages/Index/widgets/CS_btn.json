@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 21,
+  "bottomRow": 20,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -42,7 +42,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 18,
   "text": "Generate CS",
-  "topRow": 17,
+  "topRow": 16,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "y73z5hrvtl",

@@ -8,7 +8,8 @@ export default {
 			"payload": {
 				"id": taskId
 			},
-			"action" : actionText
+			"action" : actionText,
+			"override_cs":OverrideCS.isChecked
 		};
 		Text1.setText("Launching script...");
 		// Send the POST request
@@ -22,8 +23,9 @@ export default {
 			.then(response => response.json())
 			.then(data => {
 			// Handle success response
-			console.log("Success:", data);
+			// console.log("Success:", data);
 			Text1.setText(data.responce);
+			OverrideCS.setValue(false);
 		})
 			.catch((error) => {
 			// Handle error response

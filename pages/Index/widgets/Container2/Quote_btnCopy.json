@@ -30,6 +30,8 @@
   "mobileTopRow": 30,
   "needsErrorInfo": false,
   "onClick": "{{JSObject2.ActionClick('newQuote');}}",
+  "originalBottomRow": 20,
+  "originalTopRow": 16,
   "parentColumnSpace": 13.53125,
   "parentId": "uifbsc173y",
   "parentRowSpace": 10,

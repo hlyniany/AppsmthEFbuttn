@@ -3,15 +3,16 @@ export default {
 		// Get the task ID from Input2
 		const taskId = Input2.text;
 		const actionText = a;
+		
 		// Construct the JSON body with the task ID
 		const body = {
 			"payload": {
 				"id": taskId
 			},
 			"action" : actionText,
-			"override_cs":OverrideCS.isChecked
+			"override_cs": !ValidateCS.isSwitchedOn
 		};
-		Text1.setText("Launching script...");
+		Text1.setText("Launching script. Validation override is " + !ValidateCS.isSwitchedOn);
 		// Send the POST request
 		fetch("https://hook.eu1.make.com/34kfn422g71sf526mhh6bnbfc3lldexh", {
 			method: "POST",
@@ -25,7 +26,7 @@ export default {
 			// Handle success response
 			// console.log("Success:", data);
 			Text1.setText(data.responce);
-			OverrideCS.setValue(false);
+			resetWidget('ValidateCS' , true);
 		})
 			.catch((error) => {
 			// Handle error response

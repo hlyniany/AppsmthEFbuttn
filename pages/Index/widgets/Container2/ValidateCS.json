@@ -1,6 +1,6 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "alignWidget": "LEFT",
+  "alignWidget": "RIGHT",
   "animateLoading": true,
   "bottomRow": 8,
   "boxShadow": "none",
@@ -11,7 +11,11 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onChange"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onChange"
@@ -31,7 +35,7 @@
   "mobileRightColumn": 14,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "onChange": "",
+  "onChange": "{{{}}}",
   "originalBottomRow": 16,
   "originalTopRow": 4,
   "parentColumnSpace": 3.4931640625,

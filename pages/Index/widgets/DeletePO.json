@@ -36,6 +36,8 @@
   "mobileTopRow": 52,
   "needsErrorInfo": false,
   "onClick": "{{JSObject2.DeletePOClick()}}",
+  "originalBottomRow": 59,
+  "originalTopRow": 55,
   "parentColumnSpace": 13.53125,
   "parentId": "0",
   "parentRowSpace": 10,

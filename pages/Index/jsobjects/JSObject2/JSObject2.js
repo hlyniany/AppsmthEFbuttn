@@ -26,7 +26,7 @@ export default {
 			// Handle success response
 			// console.log("Success:", data);
 			Text1.setText(data.responce);
-			resetWidget('ValidateCS' , true);
+			
 		})
 			.catch((error) => {
 			// Handle error response

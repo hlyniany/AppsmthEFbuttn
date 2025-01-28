@@ -34,6 +34,8 @@
   "mobileTopRow": 30,
   "needsErrorInfo": false,
   "onClick": "{{navigateTo('https://hook.eu1.make.com/4dkskzu3r9dhl9cqfunc96dcc2cis78k', {}, 'NEW_WINDOW');}}",
+  "originalBottomRow": 51,
+  "originalTopRow": 47,
   "parentColumnSpace": 13.53125,
   "parentId": "0",
   "parentRowSpace": 10,

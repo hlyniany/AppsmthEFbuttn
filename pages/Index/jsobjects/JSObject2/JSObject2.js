@@ -1,5 +1,5 @@
 export default {
-	ActionClick(a) {
+	async ActionClick(a) {
 		// Get the task ID from Input2
 		const taskId = Input2.text;
 		const actionText = a;
@@ -14,24 +14,17 @@ export default {
 		};
 		Text1.setText("Launching script. Validation override is " + !ValidateCS.isSwitchedOn);
 		// Send the POST request
-		fetch("https://hook.eu1.make.com/34kfn422g71sf526mhh6bnbfc3lldexh", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json"
-			},
-			body: JSON.stringify(body)
-		})
-			.then(response => response.json())
-			.then(data => {
-			// Handle success response
-			// console.log("Success:", data);
-			Text1.setText(data.responce);
-			
-		})
-			.catch((error) => {
-			// Handle error response
-			console.error("Error:", error);
-		});
+		const response = await fetch("https://hook.eu1.make.com/34kfn422g71sf526mhh6bnbfc3lldexh", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(body)
+});
+const jsonResponse = await response.json();
+
+await Text1.setText(jsonResponse.response);
+await ValidateCS.setValue(true);
 	},
 
 	DeletePOClick() {

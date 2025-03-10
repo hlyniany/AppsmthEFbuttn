@@ -12,15 +12,27 @@ export default {
 			"action" : actionText,
 			"override_cs": !ValidateCS.isSwitchedOn
 		};
-		Text1.setText("Launching script. Validation override is " + !ValidateCS.isSwitchedOn);
+		await Text1.setText("Launching script. Validation override is " + !ValidateCS.isSwitchedOn);
 		// Send the POST request
 		const response = await fetch("https://hook.eu1.make.com/34kfn422g71sf526mhh6bnbfc3lldexh", 
 				{
     		method: "POST",	headers: {"Content-Type": "application/json"}, body: JSON.stringify(body)
 				});
+		
 		const jsonResponse = await response.json();
+		// console.log(jsonResponse);
 		await Text1.setText(jsonResponse.response);
 		await ValidateCS.setValue(true);
+		showModal(ModalWait.name);
+		while (true) {
+        const response = await script_status.run({ executionId: jsonResponse.executionId, scenarioId: jsonResponse.scenarioId });
+        if (response.eventType === "EXECUTION_END") {
+          console.log("Execution completed:", response);
+          break; // Stop polling
+        }
+		  await new Promise(resolve => setTimeout(resolve, 30000));
+	}
+	closeModal(ModalWait.name);
 },
 
 	DeletePOClick() {

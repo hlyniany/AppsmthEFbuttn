@@ -30,14 +30,14 @@ export default {
 		while (true) {
         const response = await script_status.run({ executionId: jsonResponse.executionId, scenarioId: jsonResponse.scenarioId });
         if (response.eventType === "EXECUTION_END") {
-          console.log("Execution completed:", response);
+          //console.log("Execution completed:", response);
           break; // Stop polling
         }
 		  await new Promise(resolve => setTimeout(resolve, 30000));
 	}
 	closeModal(ModalWait.name);
 	} catch (error) {
-	console.log(error);
+	//console.log(error);
 	closeModal(ModalWait.name);
 	}
 },

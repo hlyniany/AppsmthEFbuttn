@@ -10,7 +10,8 @@ export default {
 				"id": taskId
 			},
 			"action" : actionText,
-			"override_cs": !ValidateCS.isSwitchedOn
+			"override_cs": !ValidateCS.isSwitchedOn,
+			"override_rfq":!ValidateRFQ.isSwitchedOn
 		};
 		await Text1.setText("Launching script. Validation override is " + !ValidateCS.isSwitchedOn);
 		// Send the POST request

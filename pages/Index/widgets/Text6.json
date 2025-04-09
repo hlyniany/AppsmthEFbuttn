@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 23,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -33,7 +33,7 @@
   "mobileRightColumn": 37,
   "mobileTopRow": 14,
   "needsErrorInfo": false,
-  "originalBottomRow": 19,
+  "originalBottomRow": 18,
   "originalTopRow": 14,
   "overflow": "NONE",
   "parentColumnSpace": 13.53125,
@@ -46,7 +46,7 @@
   "text": "{{ValidateCS.isSwitchedOn==true?'Costing sheet will be validated':'Costing sheet validation supressed'}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 14,
+  "topRow": 19,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

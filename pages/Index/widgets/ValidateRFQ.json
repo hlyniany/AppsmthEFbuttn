@@ -1,0 +1,52 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "RIGHT",
+  "animateLoading": true,
+  "bottomRow": 27,
+  "boxShadow": "none",
+  "defaultSwitchState": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onChange"
+    }
+  ],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ekne1dx4di",
+  "label": "Validate RFQ",
+  "labelPosition": "Left",
+  "leftColumn": 6,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 14,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "onChange": "{{{}}}",
+  "originalBottomRow": 45,
+  "originalTopRow": 40,
+  "parentColumnSpace": 3.4931640625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 18,
+  "topRow": 23,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "0cjppwuevg",
+  "widgetName": "ValidateRFQ"
+}

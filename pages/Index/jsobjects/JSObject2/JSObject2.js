@@ -37,7 +37,7 @@ export default {
 	}
 	closeModal(ModalWait.name);
 	} catch (error) {
-	
+	console.log(error);
 	closeModal(ModalWait.name);
 	}
 },

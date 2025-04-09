@@ -15,6 +15,7 @@ export default {
 		};
 		await Text1.setText("Launching script. Validation override is " + !ValidateCS.isSwitchedOn);
 		// Send the POST request
+		try {
 		const response = await fetch("https://hook.eu1.make.com/34kfn422g71sf526mhh6bnbfc3lldexh", 
 				{
     		method: "POST",	headers: {"Content-Type": "application/json"}, body: JSON.stringify(body)
@@ -35,6 +36,10 @@ export default {
 		  await new Promise(resolve => setTimeout(resolve, 30000));
 	}
 	closeModal(ModalWait.name);
+	} catch (error) {
+	
+	closeModal(ModalWait.name);
+	}
 },
 
 	DeletePOClick() {

@@ -24,6 +24,7 @@ export default {
 		// console.log(jsonResponse);
 		await Text1.setText(jsonResponse.response);
 		await ValidateCS.setValue(true);
+		await ValidateRFQ.setValue(true);
 		showModal(ModalWait.name);
 		while (true) {
         const response = await script_status.run({ executionId: jsonResponse.executionId, scenarioId: jsonResponse.scenarioId });

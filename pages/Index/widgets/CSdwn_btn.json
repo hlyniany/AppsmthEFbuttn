@@ -33,7 +33,7 @@
   "mobileRightColumn": 18,
   "mobileTopRow": 30,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo('https://hook.eu1.make.com/k839iaao560v979hysykbcyeo5rxi6vg', {\n  \"id\": RevisionTemp.text\n}, 'NEW_WINDOW');}}",
+  "onClick": "{{navigateTo('https://hook.eu1.make.com/k839iaao560v979hysykbcyeo5rxi6vg', {\n  \"id\": ClickUpId.text\n}, 'NEW_WINDOW');}}",
   "originalBottomRow": 61,
   "originalTopRow": 57,
   "parentColumnSpace": 13.53125,

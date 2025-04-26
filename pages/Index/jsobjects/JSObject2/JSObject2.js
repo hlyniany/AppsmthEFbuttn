@@ -1,7 +1,7 @@
 export default {
 	async ActionClick(a) {
 		// Get the task ID from Input2
-		const taskId = Input2.text;
+		const taskId = ClickUpId.text;
 		const actionText = a;
 		
 		// Construct the JSON body with the task ID
@@ -12,7 +12,7 @@ export default {
 			"action" : actionText,
 			"override_cs": !ValidateCS.isSwitchedOn,
 			"override_rfq":!ValidateRFQ.isSwitchedOn,
-			"Revision":RevisionTemp.text
+			"revision":RevisionTemp.selectedOptionValue
 		};
 		await Text1.setText("Launching script. Validation override is " + !ValidateCS.isSwitchedOn);
 		// Send the POST request

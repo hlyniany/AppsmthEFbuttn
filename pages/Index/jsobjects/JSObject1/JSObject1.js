@@ -8,11 +8,11 @@ export default {
 
         if (match && match[1]) {
             // Set extracted task ID to Input2
-          Input2.setValue(match[1]);
+          RevisionTemp.setValue(match[1]);
 					Text1.setText("");
         } else {
             // Clear Input2 if no match is found
-           Input2.setValue("");
+           RevisionTemp.setValue("");
         }
     }
 };

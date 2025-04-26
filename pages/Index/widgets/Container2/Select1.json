@@ -1,0 +1,59 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 19,
+  "boxShadow": "none",
+  "defaultOptionValue": "Rev00",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "3l4mb2bsqs",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Revision",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 20,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 13,
+  "needsErrorInfo": false,
+  "optionLabel": "code",
+  "optionValue": "code",
+  "parentColumnSpace": 3.4931640625,
+  "parentId": "uifbsc173y",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "serverSideFiltering": false,
+  "sourceData": "[{\"code\":\"Rev00\"},{\"code\":\"Rev01\"},{\"code\":\"Rev02\"},{\"code\":\"Rev03\"},{\"code\":\"Rev04\"},{\"code\":\"Rev05\"},{\"code\":\"Rev06\"},{\"code\":\"Rev07\"},{\"code\":\"Rev08\"},{\"code\":\"Rev09\"},{\"code\":\"Rev10\"},{\"code\":\"Rev11\"},{\"code\":\"Rev12\"},{\"code\":\"Rev13\"},{\"code\":\"Rev14\"},{\"code\":\"Rev15\"},{\"code\":\"Rev16\"},{\"code\":\"Rev17\"},{\"code\":\"Rev18\"},{\"code\":\"Rev19\"},{\"code\":\"Rev20\"}]\n",
+  "topRow": 12,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "7fw6oz8s0q",
+  "widgetName": "Select1"
+}
